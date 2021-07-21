@@ -8,12 +8,10 @@ let clock = () => {
     if (hrs == 0) {
         hrs = 12
     }
-    else if (hrs >= 12) {
-        amorpm = "PM"
 
-    }
-    else if (hrs > 12) {
+    else if (hrs >= 12) {
         hrs = hrs - 12
+        amorpm = "PM"
     }
 
     document.getElementById('hours').innerHTML = hrs
